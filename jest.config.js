@@ -8,6 +8,9 @@ const jestConfig = {
   transform: {
     '^.+\\.(t|j)sx?$': '@swc/jest',
   },
+  moduleNameMapper: {
+    '^pkg-value-object/(.*)$': '<rootDir>/$1',
+  },
   collectCoverageFrom: [
     'src/**/*.ts',
     '!**/*.d.ts',

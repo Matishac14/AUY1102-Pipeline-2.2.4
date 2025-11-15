@@ -1,4 +1,4 @@
-import { StringValueObject } from '../../../../../src';
+import { StringValueObject } from '../../../../src';
 
 export default class FirstName extends StringValueObject {
   constructor(firstName: string) {

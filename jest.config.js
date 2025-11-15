@@ -22,4 +22,10 @@ const jestConfig = {
   testPathIgnorePatterns: ['/node_modules/', '/dist/'],
 };
 
-module.exports = jestConfig;
+module.exports = {
+  jestConfig;
+  moduleNameMapper: {
+    '^pkg-value-object/(.*)$': '<rootDir>/src/$1',
+  },
+  // ...
+};

@@ -1,9 +1,10 @@
 name: Typescript for Pull Requests
 
 on:
+  push:
+    branches: [ "master" ]
   pull_request:
-    branches:
-      - master
+    branches: [ "master" ]
 
 jobs:
   lint:

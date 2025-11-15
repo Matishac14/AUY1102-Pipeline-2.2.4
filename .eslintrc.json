@@ -57,6 +57,7 @@
         "peerDependencies": true,
         "bundledDependencies": true
       }
-    ]
+    ],
+    "unicorn/expiring-todo-comments": "off"
   }
 }

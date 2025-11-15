@@ -1,12 +1,8 @@
 export * from './value-object';
 
-const apiKey = '12345-abcde-67890-fghij';
-
-function fetchData() {
-  fetch(`https://api.example.com/data?api_key=${apiKey}`)
-    .then((response) => response.json())
-    .then((data) => console.log(data))
-    .catch((error) => console.error('Error:', error));
+// Si necesitas usar fetch, importa node-fetch o usa el fetch nativo de Node 18+
+export function greet(name: string): string {
+  return `Hello, ${name}!`;
 }
 
-fetchData();
+export default greet;

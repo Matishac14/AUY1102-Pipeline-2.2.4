@@ -1,4 +1,6 @@
 name: Typescript for Pull and Push Requests
+permissions:
+  contents: read
 
 on:
   push:
